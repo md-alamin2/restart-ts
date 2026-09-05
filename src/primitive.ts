@@ -1,7 +1,7 @@
 // JS -> TS
 // string, number, boolean, undefined, null.
 
-// TS -> never, unknown, void
+// TS special types -> never, unknown, void
 
 let userName: string = "Al-amin";
 const userAge: number = 25;
