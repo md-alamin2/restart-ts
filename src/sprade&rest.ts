@@ -22,3 +22,11 @@ const otherInfo ={
 }
 
 const userInfo = {...user, ...otherInfo}
+
+
+// ? rest operator
+const sendInvitation = (...friends: string[])=>{
+    friends.forEach((friend: string)=> console.log(`invitation send to ${friend}`))
+}
+
+sendInvitation('Ahad', 'Adnan', 'sanower', 'samiul', 'hasibul', 'sabbir', 'tawhid', 'shawon')
