@@ -24,6 +24,7 @@ const user: User = {
     firstName: "Md",
     lastName: "Al-amin",
   },
+  gender: 'male',
   contactNo: "017777777777",
   address: {
     division: "Dhamsona",
