@@ -34,7 +34,7 @@ const user: User = {
   },
 };
 
-
+const userName = user.name.firstName;
 
 //? type alias in function
 
