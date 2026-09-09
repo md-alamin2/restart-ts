@@ -40,5 +40,5 @@ const user: {
   },
 };
 
-const userName = user?.name?.lastName
+const userName = `${user?.name?.firstName} ${user?.name?.lastName}`
 console.log(userName)
