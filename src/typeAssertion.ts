@@ -6,7 +6,7 @@ anything = "Hello";
 
 console.log((anything as string).at(2));
 
-const kgToGMConverter = (input: number | string) => {
+const kgToGMConverter = (input: number | string): number | string | unknown => {
   if (typeof input === "number") {
     return input * 1000;
   } else if (typeof input === "string") {
@@ -18,5 +18,8 @@ const kgToGMConverter = (input: number | string) => {
   }
 };
 
-console.log(kgToGMConverter("2 kg"))
-console.log(kgToGMConverter(true))
+
+const result1 = (kgToGMConverter("2 kg") as string).length // type assertion
+const result2 = kgToGMConverter(2)
+console.log(result1)
+console.log(result2)
