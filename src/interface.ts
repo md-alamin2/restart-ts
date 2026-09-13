@@ -42,6 +42,14 @@ interface IUserWithRole extends IUser {
   role: "admin" | "user";
 }
 
+interface IUserWithAddress extends IUser{
+  address: {
+    state: string;
+    city: string;
+    country: string
+  }
+}
+
 const user4: IUserWithRole = {
   name: "Mr.z",
   age: 23,
