@@ -19,3 +19,17 @@ type Coordinates<X, Y> = [X, Y] // generalize
 
 const coordinates1: Coordinates<number, number> = [1, 2]
 const coordinates2: Coordinates<string, string> = ['1', '2']
+
+
+// ? generic for array of object 
+
+const userList : GenericArray<{name: string, age: number}>=[
+    {
+       name: "Al-amin",
+       age: 22 
+    },
+    {
+       name: "Al-amin",
+       age: 22 
+    },
+]
