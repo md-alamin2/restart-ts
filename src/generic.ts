@@ -94,3 +94,20 @@ const richDeveloper: Developer<brandedWatch, Bike> = {
     cc: 150,
   },
 };
+
+// ? generic with function
+
+const createArrayWithString = (value: string) => [value];
+
+const createArrayWithNumber = (value: number) => [value];
+
+const createArrayWithUserObj = (value: { id: number; name: string }) => [value];
+
+// generic arrow function
+const createArrayWithGeneric = <T>(value: T)=>{ 
+    return [value];
+}
+
+const arrStr = createArrayWithGeneric("Hello");
+const arrNum = createArrayWithGeneric(1234);
+const arrUser = createArrayWithGeneric({ id: 1234, name: "Al-amin" });

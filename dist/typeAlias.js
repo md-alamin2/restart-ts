@@ -16,5 +16,6 @@ const user = {
         postalCode: 12345,
     },
 };
+const userName = user.name.firstName;
 const add = (num1, num2) => num1 + num2;
 //# sourceMappingURL=typeAlias.js.map
