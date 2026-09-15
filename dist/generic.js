@@ -53,4 +53,14 @@ const richDeveloper = {
     },
 };
 // ? generic with function
+const createArrayWithString = (value) => [value];
+const createArrayWithNumber = (value) => [value];
+const createArrayWithUserObj = (value) => [value];
+// generic arrow function
+const createArrayWithGeneric = (value) => {
+    return [value];
+};
+const arrStr = createArrayWithGeneric("Hello");
+const arrNum = createArrayWithGeneric(1234);
+const arrUser = createArrayWithGeneric({ id: 1234, name: "Al-amin" });
 //# sourceMappingURL=generic.js.map
