@@ -40,7 +40,7 @@ const getPropertyFromObject  = <T> (obj: T, key: keyof T) => {
 };
 
 const result= getPropertyFromObject(user, "name");
-console.log(result)
+// console.log(result)
 
 
 const product = {
@@ -51,3 +51,6 @@ const product = {
 }
 
 const result2 = getPropertyFromObject(product, "brand");
+
+console.log(result)
+console.log(result2)
